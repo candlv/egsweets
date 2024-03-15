@@ -1,0 +1,57 @@
+{
+  "name": "dessert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "reset:db":"export ENV=testdb-migrate reset && db-migrate up",
+    "dev": "export ENV=prod && nodemon",
+    "start": "node www/app.js",
+    "build": "rm -rf www && tsc",
+    "test": "echo \"Error: no test specified\"",
+    "deploy:ui": "aws s3 cp --recursive --acl public-read ./public s3://egdessertbucket5432/",
+    "deploy:api": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dg-ska/dessert.git"
+  },
+  "keywords": [
+    "dessert",
+    "passtry",
+    "sweets"
+  ],
+  "author": "Saber Kassem Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dg-ska/dessert/issues"
+  },
+  "homepage": "https://github.com/dg-ska/dessert#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/express-fileupload": "^1.2.2",
+    "@types/jasmine": "^4.0.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/pg": "^8.6.5",
+    "@types/supertest": "^2.0.12",
+    "jasmine": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2",
+    "typescript": "^4.6.3"
+  }
+}

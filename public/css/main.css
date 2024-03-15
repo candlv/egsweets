@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    margin-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(204, 204, 204, 0.2);
+}
+
+nav h2 {
+    color: #4D4C4B;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h2 span {
+    color: #f57906;
+}
+
+nav ul {
+    margin: 0;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    font-weight: bold;
+    color: #4D4C4B;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f57906;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #4D4C4B;
+    border-bottom: 3px solid #4D4C4B;
+}
+
+.heading {
+    text-align: center;
+    color: #4D4C4B;
+    text-transform: capitalize;
+}
+
+main {
+    margin-top: 50px;
+    width: 98%;
+}
+
+/*Cards*/
+#row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#row>div {
+    min-width: 15%;
+    height: 150;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid rgb(204, 204, 204, 0.4);
+}
+
+#row h3 {
+    color: #f57906;
+    font-weight: bold;
+}
+
+#row h2,
+p {
+    font-weight: bold;
+}

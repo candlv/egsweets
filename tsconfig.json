@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  
+    "module": "commonjs",                                
+    "rootDir": "./src",                                                            
+    "outDir": "./www",                                  
+    "esModuleInterop": true,                            
+    "forceConsistentCasingInFileNames": true,         
+    "strict": true,                                   
+    "noImplicitAny": true,                                
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["src/**/*"],
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "www", "temp/*"]
+  }
+
+}

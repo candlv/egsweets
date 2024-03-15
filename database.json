@@ -1,0 +1,27 @@
+{
+    "defaultEnv": { "ENV": "ENV"},
+    "dev":{
+        "driver": "pg",
+        "database": {"ENV": "RDS_DATABASE"},
+        "password": {"ENV": "RDS_PASSWORD"},
+        "user": {"ENV": "RDS_USERNAME"},
+        "host": {"ENV": "RDS_HOSTNAME"},
+        "port": {"ENV": "RDS_PORT"}
+    },
+    "test": {
+        "driver": "pg",
+        "database": {"ENV": "TEST_DB"},
+        "password": {"ENV": "RDS_PASSWORD"},
+        "user": {"ENV": "RDS_USERNAME"},
+        "host": {"ENV": "RDS_HOSTNAME"},
+        "port": {"ENV": "RDS_PORT"} 
+    },
+    "prod": {
+        "driver": "pg",
+        "database": {"ENV": "RDS_DATABASE"},
+        "password": {"ENV": "RDS_PASSWORD"},
+        "user": {"ENV": "RDS_USERNAME"},
+        "host": {"ENV": "RDS_HOSTNAME"},
+        "port": {"ENV": "RDS_PORT"}
+    }    
+}

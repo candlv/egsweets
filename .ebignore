@@ -1,0 +1,16 @@
+node_modules
+documentation
+migrations
+public
+src
+database.json
+.elasticbeanstalk
+nodemon.json
+tsconfig.json
+.env
+.gitignore
+txt.md
+package-lock.json
+README.md
+.circleci
+.git

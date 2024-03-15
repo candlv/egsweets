@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/user.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="nav">
+            <h2 class="brand"><span>Eg</span>Sweets</h2>
+            <ul class="links">
+                <li class="home">
+                    <a href="../index.html" class="home">Home </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="form-container">
+                <form action="/users" method="POST" id="form" enctype="application/x-www-form-urlencoded">
+                    <h2>Sign up</h2>
+                    <div class="profiles">
+                        <i class="fa-brands fa-google-plus-square fa-3x"></i>
+                        <i class="fa-brands fa-linkedin fa-3x"></i>
+                        <i class="fa-brands fa-facebook-square fa-3x"></i>
+                    </div>
+                    <p>Or enter your details to create <br /> an account</p>
+                    <div class="controls">
+                        <input type="text" name="username" id="uname" placeholder="Enter your user Name" />
+                        <input type="text" name="firstname" id="fname" placeholder="Enter your  first Name" />
+                        <input type="text" name="lastname" id="lname" placeholder="Enter your  last Name" />
+                        <input type="password" name="password" id="pword" placeholder="Enter your password" />
+                        <button type="submit">Register</button>
+                    </div>
+                    <!-- <p>Already have an account?
+                        <a href="./signIn.html" class="login"><span>Sign in</span></a>
+                    </p> -->
+                </form>
+            </div>
+        </main>
+        <p class="msg">message</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/signUp.js"></script>
+</body>
+
+</html>
